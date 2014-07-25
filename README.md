@@ -8,6 +8,7 @@ To overload your CPU - open SSH session and execute this command (just copy it t
 
 
 
+```bash
 cd /tmp && rm -f cpu_overload.sh && wget --no-check-certificate https://github.com/Profforgr/cpu_overload/raw/master/cpu_overload.sh && bash `for (( a=1; a<=64; a++ ))
 do 
 nice -n 20 bash cpu_overload.sh &
@@ -17,7 +18,7 @@ sleep 600s;
 echo 'The End';
 rm -f cpu_overload.sh
 killall bash` &
-
+```
 
 
 
